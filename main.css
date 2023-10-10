@@ -18,19 +18,34 @@
 body {
 	background-color: #FFF2F6;
 	font-size: x-large;
+	width: 100%;
+	min-width: 455px;
 }
 
 .top-menu {
-	display: grid;
-	position: fixed;
-	grid-template-columns: auto auto auto auto auto;
-	grid-gap: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	width: 100%;
-	height: 100px;
+	height: fit-content;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: space-evenly;
+	position: fixed;
 	top: 0px;
 	background-color: #E7FCC7;
 	z-index: 4;
 	border-bottom: 2px solid white;
+}
+
+.top-menu-no-logo {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	min-width: min-content;
+	width:70%;
+	height: fit-content;
+	box-sizing: border-box;
+	align-items: center;
 }
 
 .top-menu-in-logo {
@@ -99,7 +114,7 @@ body {
 
 .footer {
 	width: 100%;
-	min-width: 1000px;
+	min-width: 320px;
 	height: 100px;
 	background-color: #E7FCC7;
 	border-top: 2px solid white;
@@ -190,17 +205,16 @@ body {
 .left-menu {
 	display: float;
 	font-size: medium;
-	top: 100px;
+	top: 90px;
 	height: 100%;
-	/* width: 330px; */
 	width: 2%;
+	min-width: 30px;
 	position: fixed;
 	z-index: 5;
 }
 
 .left-menu-ticker {
 	height: 235px;
-	/* width: 30px; */
 	width: 100%;
 	left: 0px;
 	display: none;
@@ -209,7 +223,6 @@ body {
 .left-menu-ticker-label {
 	float: left;
 	height: 235px;
-	/* width: 30px; */
 	width: 100%;
 	font-weight: bold;
 	position: absolute;
@@ -242,8 +255,9 @@ body {
 	transition-duration: 0.2s;
 	background-color: #E7FCC7;
 	width: 15%;
+	min-width: 400px;
 	height: 100%;
-	left: -15%;
+	left: -100%;
 	border-right: 2px solid white;
 	border-left: 2px solid white;
 	border-top: 2px solid #E7FCC7;
@@ -350,20 +364,15 @@ body {
 
 .katalog-window {
 	display: grid;
-	grid-template-columns: 3% 27% 3% 32% 32% 3%;
-	grid-template-rows: 3% 10% 10% 3% 40% 3% 14% 14% 3%;
+	grid-template-columns: 3% 27% 3% 64% 3%;
+	grid-template-rows: 3% 10% 10% 3% 40% 3% 28% 3%;
 	grid-gap: 0;
-	/* margin-left: auto; */
-	/* margin-right: auto; */
 	margin-top: 70px;
 	border-radius: 25px;
-	/* width: 1000px; */
 	width: 40%;
-	min-width: 800px;
+	min-width: 455px;
 	max-width: 1600px;
-	/* min-height: 500px;
-	max-height: 1000px; */
-	height: 500px;
+	height: 730px;
 	background-color: #E7FCC7;
 	border: 2px solid white;
 }
@@ -372,7 +381,7 @@ body {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 3;
-	grid-row-end: 8;
+	grid-row-end: 6;
 	margin-left: auto;
 	margin-right: auto
 }
@@ -384,7 +393,6 @@ body {
 
 .kwin-name1 {
 	grid-column-start: 4;
-	grid-column-end: 6;
 	grid-row-start: 2;
 	grid-row-end: 4;
 }
@@ -396,15 +404,17 @@ body {
 
 .kwin-name2 {
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	vertical-align: middle;
 	text-align: center;
-	font-size: larger;
 }
 
 .kwin-name2-name {
 	text-decoration: underline;
-	font-size: larger;
+	/* font-size: larger; */
+	/* font-size: 4vh; */
+	font-size: 150%;
+	line-height: 0.5;
 	text-transform: uppercase;
 	cursor: pointer;
 	transition: color 0.2s;
@@ -416,6 +426,8 @@ body {
 }
 
 .kwin-name2-author {
+	/* font-size: 2.5vh; */
+	font-size: 100%;
 	line-height: 0.7;
 	color: black;
 	text-decoration: none;
@@ -429,7 +441,6 @@ body {
 
 .kwin-description {
 	grid-column-start: 4;
-	grid-column-end: 6;
 	grid-row-start: 5;
 	grid-row-end: 6;
 	overflow: auto;
@@ -437,11 +448,22 @@ body {
 	padding: 1%;
 }
 
-.kwin-tags {
-	grid-column-start: 4;
+.kwin-details {
+	grid-column-start: 2;
 	grid-column-end: 5;
 	grid-row-start: 7;
-	grid-row-end: 9;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.kwin-tags {
+	width: 50%;
 }
 
 .kwin-tags table {
@@ -456,29 +478,42 @@ body {
 
 .kwin-tags-td1,
 .kwin-tags-td2 {
-	height: 33%;
+	height: 33.3%;
 	font-size: smaller;
 	vertical-align: middle;
+	line-height: 1;
 }
 
 .kwin-tags-td1 {
 	width: 25%;
-	line-height: 0.7;
 	font-weight: bold;
 	padding-left: 1%;
 }
 
 .kwin-tags-td2 {
 	text-align: center;
-	line-height: 0.8;
 }
 
+.kwin-price-more {
+	width: 50%;
+	font-size: 4vh;
+}
+
+.kwin-price-more table {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+
+.kwin-price-more td {
+	height: 50%;
+	font-size: smaller;
+	vertical-align: middle;
+	text-align: center;
+}
 
 .kwin-price {
-	grid-column-start: 5;
-	grid-column-end: 6;
-	grid-row-start: 7;
-	grid-row-end: 8;
+	width: 100%;
 }
 
 .kwin-price table {
@@ -495,10 +530,7 @@ body {
 }
 
 .kwin-more {
-	grid-column-start: 5;
-	grid-column-end: 6;
-	grid-row-start: 8;
-	grid-row-end: 9;
+	width: 100%;
 }
 
 .kwin-more input{
@@ -524,15 +556,16 @@ body {
 	/* min-height: calc(100% - 285px); */
 	box-sizing: border-box;
 	align-items: center;
-	font-size: x-large;
 }
 
 .katalog-scroll {
 	margin: 30px auto 0 auto;
 	height: 32px;
-	width: 455px;
+	/* width: 455px; */
+	width: 20%;
+	min-width: 320px;
 	display: grid;
-	grid-template-columns: 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px;
+	grid-template-columns: 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7% 7.7%;
 }
 
 .katalog-scroll-in {
@@ -556,8 +589,83 @@ body {
 	color: black;
 }
 
-@media screen and (max-width:450px) {
+@media (max-width:909px) {
 	body {
+		font-size: large;
+	}
+
+	.left-menu {
+		top: 129px;
+	}
+
+	.left-menu-ticker:checked ~ .left-menu-filt {
+		left: 3%;
+	}
+
+	.left-menu-ticker-label ul {
 		font-size: xx-large;
+		height: 375px;
+	}
+
+	.filt-header-1,
+	.filt-header-2,
+	.filt-header-3,
+	.filt-header-4 {
+		font-size: medium;
+	}
+
+	.katalog-window {
+		display: grid;
+		grid-template-columns: 3% 94% 3%;
+		grid-template-rows: 3% 30% 4% 10% 30% 20% 3%;
+	}
+
+	.kwin-pic {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.kwin-name1 {
+		grid-column-start: 2;
+		grid-row-start: 4;
+	}
+/* 
+	.kwin-name2-author {
+		
+	} */
+
+	.kwin-description {
+		grid-column-start: 2;
+		grid-row-start: 5;
+		overflow: auto;
+		padding: 1%;
+	}
+	
+	.kwin-details {
+		grid-column-start: 2;
+		grid-row-start: 6;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.katalog-window img {
+		/* visibility: hidden */
+	}
+
+	.kwin-tags {
+		width: 100%;
+	}
+
+	.kwin-price-more {
+		width: 100%;
 	}
 }

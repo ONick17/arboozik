@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="Полка, интернет, магазин, книги, комиксы">
 	<meta name="description" content="Книжный интернет-магазин, где вы можете и сами зарабатывать!">
-	<meta name="viweport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	<link href="main.css" type="text/css" rel="stylesheet">
@@ -15,9 +15,11 @@
 <header>
 	<div class="top-menu">
 		<div class="top-menu-in-logo"><a><img src="img/logo-1.png" height="90px"></a></div>
-		<div class="top-menu-in-chs">Каталог</div>
-		<div class="top-menu-in"><a>FAQ</a></div>
-		<div class="top-menu-in"><a>Кабинет</a></div>
+		<div class="top-menu-no-logo">
+			<div class="top-menu-in-chs">Каталог</div>
+			<div class="top-menu-in"><a>FAQ</a></div>
+			<div class="top-menu-in"><a>Кабинет</a></div>
+		</div>
 	</div>
 </header>
 
@@ -155,16 +157,16 @@
 			"Метро 2033" — культовый роман-антиутопия, один из главных российских бестселлеров нулевых. Переведен на 37 иностранных языков, заинтересовал Голливуд, 
 			превращен в атмосферные компьютерные блокбастеры, породил целую книжную вселенную и настоящую молодежную субкультуру во всем мире.
 		</p></div>
-		<div class="kwin-tags"><table>
-			<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Постапокалиптика</td></tr>
-			<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Метро</td></tr>
-			<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">350-399</td></tr>
-		</td></tr></table></div>
-		<div class="kwin-price"><table>
-			<tr><td>300 руб.</td></tr>
-		</table></div>
-		<div class="kwin-more">
-			<input type="button" value="ПОДРОБНЕЕ">
+		<div class="kwin-details">
+			<div class="kwin-tags"><table>
+				<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Постапокалиптика</td></tr>
+				<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Метро</td></tr>
+				<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">350-399</td></tr>
+			</td></tr></table></div>
+			<div class="kwin-price-more"><table>
+				<tr><td class="kwin-price">300 руб.</td></tr>
+				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
+			</table></div>
 		</div>
 	</div>
 	
@@ -184,16 +186,16 @@
 				Бесконечные истории беженцев, просящих политического убежища, переплетаются, прорастают друг в друга -из современной Швейцарии действие переносится в Париж, Россию начала прошлого века или древнюю Персию - и сливаются воедино - в историю любви, без которой невозможен мир.
 			</p>
 		</div>
-		<div class="kwin-tags"><table>
-			<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Художественный вымысел</td></tr>
-			<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
-			<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">450-499</td></tr>
-		</td></tr></table></div>
-		<div class="kwin-price"><table>
-			<tr><td>600 руб.</td></tr>
-		</table></div>
-		<div class="kwin-more">
-			<input type="button" value="ПОДРОБНЕЕ">
+		<div class="kwin-details">
+			<div class="kwin-tags"><table>
+				<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Художественный вымысел</td></tr>
+				<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
+				<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">450-499</td></tr>
+			</td></tr></table></div>
+			<div class="kwin-price-more"><table>
+				<tr><td class="kwin-price">300 руб.</td></tr>
+				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
+			</table></div>
 		</div>
 	</div>
 
@@ -214,16 +216,16 @@
 				Кажется, будто у Пелевина есть возможность время от времени заглядывать одним глазком в будущее – настолько мощен его писательский гений.
 			</p>
 		</div>
-		<div class="kwin-tags"><table>
-			<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Научная фантастика, сатира</td></tr>
-			<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
-			<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">400-449</td></tr>
-		</td></tr></table></div>
-		<div class="kwin-price"><table>
-			<tr><td>500 руб.</td></tr>
-		</table></div>
-		<div class="kwin-more">
-			<input type="button" value="ПОДРОБНЕЕ">
+		<div class="kwin-details">
+			<div class="kwin-tags"><table>
+				<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Научная фантастика, сатира</td></tr>
+				<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
+				<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">400-449</td></tr>
+			</td></tr></table></div>
+			<div class="kwin-price-more"><table>
+				<tr><td class="kwin-price">300 руб.</td></tr>
+				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
+			</table></div>
 		</div>
 	</div>
 
@@ -245,16 +247,16 @@
 				Но если есть в человеке душа… выпил он водочки — и явилось ему и всем ВЕЛИКОДУШИЕ». (Е. Гришковец)
 			</p>
 		</div>
-		<div class="kwin-tags"><table>
-			<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Проза</td></tr>
-			<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
-			<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">50-99</td></tr>
-		</td></tr></table></div>
-		<div class="kwin-price"><table>
-			<tr><td>350 руб.</td></tr>
-		</table></div>
-		<div class="kwin-more">
-			<input type="button" value="ПОДРОБНЕЕ">
+		<div class="kwin-details">
+			<div class="kwin-tags"><table>
+				<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Проза</td></tr>
+				<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
+				<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">50-99</td></tr>
+			</td></tr></table></div>
+			<div class="kwin-price-more"><table>
+				<tr><td class="kwin-price">300 руб.</td></tr>
+				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
+			</table></div>
 		</div>
 	</div>
 
@@ -274,16 +276,16 @@
 				В персонажах читатели без труда узнают не только известных политиков и творцов «новой истории», но и людей из своего близкого окружения, а может быть, самих себя.
 			</p>
 		</div>
-		<div class="kwin-tags"><table>
-			<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Антиутопия, детектив</td></tr>
-			<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
-			<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">200-249</td></tr>
-		</td></tr></table></div>
-		<div class="kwin-price"><table>
-			<tr><td>500 руб.</td></tr>
-		</table></div>
-		<div class="kwin-more">
-			<input type="button" value="ПОДРОБНЕЕ">
+		<div class="kwin-details">
+			<div class="kwin-tags"><table>
+				<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Антиутопия, детектив</td></tr>
+				<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
+				<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">200-249</td></tr>
+			</td></tr></table></div>
+			<div class="kwin-price-more"><table>
+				<tr><td class="kwin-price">300 руб.</td></tr>
+				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
+			</table></div>
 		</div>
 	</div>
 
@@ -304,16 +306,16 @@
 				Провокация. Скандал. Бомба. Новая литература.
 			</p>
 		</div>
-		<div class="kwin-tags"><table>
-			<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Сборник</td></tr>
-			<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
-			<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">250-299</td></tr>
-		</td></tr></table></div>
-		<div class="kwin-price"><table>
-			<tr><td>200 руб.</td></tr>
-		</table></div>
-		<div class="kwin-more">
-			<input type="button" value="ПОДРОБНЕЕ">
+		<div class="kwin-details">
+			<div class="kwin-tags"><table>
+				<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Сборник</td></tr>
+				<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
+				<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">250-299</td></tr>
+			</td></tr></table></div>
+			<div class="kwin-price-more"><table>
+				<tr><td class="kwin-price">300 руб.</td></tr>
+				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
+			</table></div>
 		</div>
 	</div>
 
@@ -322,10 +324,10 @@
 			<a><img src="img/katalog/1993.jpg"></a>
 		</div>
 		<div class="kwin-name1">
-			<table><tr><td class="kwin-name2">
-				<a class="kwin-name2-name">1993</a><br>
-				<a class="kwin-name2-author">Сергей Александрович Шаргунов</a>
-			</td></tr></table>
+			<table>
+				<tr><td class="kwin-name2"></td><a class="kwin-name2-name">1993</a></td></tr>
+				<tr><td class="kwin-name2"><a class="kwin-name2-author">Сергей Александрович Шаргунов</a></td></tr>
+			</table>
 		</div>
 		<div class="kwin-description">
 			<p>
@@ -333,16 +335,16 @@
 				Непримиримость политических взглядов, изменивших судьбу двух близких людей, заставляет читателя вспомнить обстановку 90-х годов XX века.
 			</p>
 		</div>
-		<div class="kwin-tags"><table>
-			<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Политическая литература</td></tr>
-			<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
-			<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">600-649</td></tr>
-		</td></tr></table></div>
-		<div class="kwin-price"><table>
-			<tr><td>400 руб.</td></tr>
-		</table></div>
-		<div class="kwin-more">
-			<input type="button" value="ПОДРОБНЕЕ">
+		<div class="kwin-details">
+			<div class="kwin-tags"><table>
+				<tr><td class="kwin-tags-td1">Жанр:</td><td class="kwin-tags-td2">Политическая литература</td></tr>
+				<tr><td class="kwin-tags-td1">Серия:</td><td class="kwin-tags-td2">Нет</td></tr>
+				<tr><td class="kwin-tags-td1">Кол-во страниц:</td><td class="kwin-tags-td2">600-649</td></tr>
+			</td></tr></table></div>
+			<div class="kwin-price-more"><table>
+				<tr><td class="kwin-price">300 руб.</td></tr>
+				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
+			</table></div>
 		</div>
 	</div>
 </div>
