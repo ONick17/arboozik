@@ -14,6 +14,7 @@
 body {
 	background-color: #FFF2F6;
 	font-size: x-large;
+	/* font-size: 2.6vh; */
 	width: 100%;
 	min-width: 320px;
 }
@@ -49,7 +50,8 @@ body {
 	margin: auto;
 }
 
-.top-menu-in-chs{
+.top-menu-in-chs,
+.top-menu-in-chs h1 {
 	text-transform: uppercase;
 	font-size: xx-large;
 	text-align: center;
@@ -59,7 +61,8 @@ body {
 	font-family: "MyFont";
 }
 
-.top-menu-in {
+.top-menu-in,
+h1 {
 	text-transform: uppercase;
 	font-size: xx-large;
 	text-align: center;
@@ -85,7 +88,7 @@ body {
 	transition: 300ms;
 }
 
-.top-menu-in a:hover {
+.top-menu-in:hover {
 	color: #F0D0E0;
 }
 
@@ -108,7 +111,7 @@ body {
 	justify-content: space-evenly;
 }
 
-.footer {
+footer {
 	width: 100%;
 	min-width: 320px;
 	height: fit-content;
@@ -492,7 +495,8 @@ body {
 
 .kwin-price-more {
 	width: 50%;
-	font-size: 4vh;
+	/* font-size: 4vh; */
+	font-size: xxx-large;
 }
 
 .kwin-price-more table {

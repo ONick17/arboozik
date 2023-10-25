@@ -13,17 +13,19 @@
 
 <body>
 <header>
-	<div class="top-menu">
-		<div class="top-menu-in-logo"><a><img src="img/logo-1.png" height="90px"></a></div>
+	<nav class="top-menu">
+		<!-- не смотрите на пустые тэги <a>, это просто заглушки для тестового сайта! -->
+		<div class="top-menu-in-logo"><a target="_self"><img alt="Логотип сайта Арбузик" src="img/logo-1.png" height="90px"></a></div>
 		<div class="top-menu-no-logo">
-			<div class="top-menu-in-chs">Каталог</div>
-			<div class="top-menu-in"><a>FAQ</a></div>
-			<div class="top-menu-in"><a>Кабинет</a></div>
+			<div class="top-menu-in-chs"><h1>Каталог</h1></div>
+			<!-- не смотрите на пустые тэги <a>, это просто заглушки для тестового сайта! -->
+			<div class="top-menu-in"><h1><a target="_self">FAQ</a></h1></div>
+			<div class="top-menu-in"><h1><a target="_self">Кабинет</a></h1></div>
 		</div>
-	</div>
+	</nav>
 </header>
 
-	<div class="left-menu">
+	<aside class="left-menu">
 		<input type="checkbox" id="lmt" class="left-menu-ticker">
 		<label class="left-menu-ticker-label" for="lmt">
 			<ul>
@@ -36,7 +38,7 @@
 				<li>ы</li>
 			</ul>
 		</label>
-		<div class="left-menu-filt">
+		<section class="left-menu-filt">
 			<p class="filt-header-1">Название/автор:</p>
 			<div class="filt-search">
 				<input type="search" placeholder="Поиск..." id="InSearch">
@@ -47,7 +49,7 @@
 				<input type="search" placeholder="Поиск..." id="InSearch">
 				<input type="submit" value="&#128269" id="InSearchSub">
 			</div>
-			<div class="filt-tags">
+			<section class="filt-tags">
 				<p class="filt-header-3">Жанр:</p>
 				<div class="filt-genre">
 					<input type="checkbox" id="check-notification">
@@ -133,19 +135,19 @@
 					<input type="checkbox" id="check-notification">
 					<label for="check-notification">Иран</label><br>
 				</div>
-			</div>
-		</div>
-	</div>
+			</section>
+		</section>
+	</aside>
 	
-<div class="main-space">
-	<div class="katalog-window">
+<section class="main-space">
+	<article class="katalog-window">
 		<div class="kwin-pic">
-			<a><img src="img/katalog/metro2033.jfif"></a>
+			<a target="_self" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D1%80%D0%BE_2033"><img alt="Обложка книги Метро 2033" src="img/katalog/metro2033.jfif"></a>
 		</div>
 		<div class="kwin-name1">
 			<table><tr><td class="kwin-name2">
-				<a class="kwin-name2-name">Метро 2033</a><br>
-				<a class="kwin-name2-author">Дмитрий Алексеевич Глуховский</a>
+				<a target="_self" class="kwin-name2-name" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D1%80%D0%BE_2033">Метро 2033</a><br>
+				<a target="_self" class="kwin-name2-author" href="https://ru.wikipedia.org/wiki/%D0%93%D0%BB%D1%83%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9,_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87">Дмитрий Алексеевич Глуховский</a>
 			</td></tr></table>
 		</div>
 		<div class="kwin-description"><p>
@@ -168,16 +170,16 @@
 				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
 			</table></div>
 		</div>
-	</div>
+	</article>
 	
-	<div class="katalog-window">
+	<article class="katalog-window">
 		<div class="kwin-pic">
-			<a><img src="img/katalog/venerin-volos.jpg"></a>
+			<a target="_self" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D0%BD_%D0%B2%D0%BE%D0%BB%D0%BE%D1%81"><img alt="Обложка книги Венерин волос" src="img/katalog/venerin-volos.jpg"></a>
 		</div>
 		<div class="kwin-name1">
 			<table><tr><td class="kwin-name2">
-				<a class="kwin-name2-name">Венерин волос</a><br>
-				<a class="kwin-name2-author">Михаил Шишкин</a>
+				<a target="_self" class="kwin-name2-name" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D0%BD_%D0%B2%D0%BE%D0%BB%D0%BE%D1%81">Венерин волос</a><br>
+				<a target="_self" class="kwin-name2-author" href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B8%D1%88%D0%BA%D0%B8%D0%BD,_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87">Михаил Шишкин</a>
 			</td></tr></table>
 		</div>
 		<div class="kwin-description">
@@ -197,16 +199,16 @@
 				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
 			</table></div>
 		</div>
-	</div>
+	</article>
 
-	<div class="katalog-window">
+	<article class="katalog-window">
 		<div class="kwin-pic">
-			<a><img src="img/katalog/snuff.jpg"></a>
+			<a target="_self" href="https://ru.wikipedia.org/wiki/S.N.U.F.F."><img alt="Обложка книги S.N.U.F.F." src="img/katalog/snuff.jpg"></a>
 		</div>
 		<div class="kwin-name1">
 			<table><tr><td class="kwin-name2">
-				<a class="kwin-name2-name">S.N.U.F.F.</a><br>
-				<a class="kwin-name2-author">Пелевин Виктор Олегович</a>
+				<a target="_self" class="kwin-name2-name" href="https://ru.wikipedia.org/wiki/S.N.U.F.F.">S.N.U.F.F.</a><br>
+				<a target="_self" class="kwin-name2-author" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%BD,_%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80_%D0%9E%D0%BB%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D1%87">Пелевин Виктор Олегович</a>
 			</td></tr></table>
 		</div>
 		<div class="kwin-description">
@@ -227,16 +229,16 @@
 				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
 			</table></div>
 		</div>
-	</div>
+	</article>
 
-	<div class="katalog-window">
+	<article class="katalog-window">
 		<div class="kwin-pic">
-			<a><img src="img/katalog/vodka.jpg"></a>
+			<a target="_self"><img alt="Обложка книги Водка как нечто большее" src="img/katalog/vodka.jpg"></a>
 		</div>
 		<div class="kwin-name1">
 			<table><tr><td class="kwin-name2">
-				<a class="kwin-name2-name">Водка как нечто большее</a><br>
-				<a class="kwin-name2-author">Гришковец Евгений</a>
+				<a target="_self" class="kwin-name2-name">Водка как нечто большее</a><br>
+				<a target="_self" class="kwin-name2-author" href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B8%D1%88%D0%BA%D0%BE%D0%B2%D0%B5%D1%86,_%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%8C%D0%B5%D0%B2%D0%B8%D1%87">Гришковец Евгений</a>
 			</td></tr></table>
 		</div>
 		<div class="kwin-description">
@@ -258,16 +260,16 @@
 				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
 			</table></div>
 		</div>
-	</div>
+	</article>
 
-	<div class="katalog-window">
+	<article class="katalog-window">
 		<div class="kwin-pic">
-			<a><img src="img/katalog/demgorodok.jpg"></a>
+			<a target="_self"><img alt="Обложка книги Демгородок" src="img/katalog/demgorodok.jpg"></a>
 		</div>
 		<div class="kwin-name1">
 			<table><tr><td class="kwin-name2">
-				<a class="kwin-name2-name">Демгородок</a><br>
-				<a class="kwin-name2-author">Юрий Михайлович Поляков</a>
+				<a target="_self" class="kwin-name2-name">Демгородок</a><br>
+				<a target="_self" class="kwin-name2-author" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D1%8F%D0%BA%D0%BE%D0%B2,_%D0%AE%D1%80%D0%B8%D0%B9_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87">Юрий Михайлович Поляков</a>
 			</td></tr></table>
 		</div>
 		<div class="kwin-description">
@@ -287,16 +289,16 @@
 				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
 			</table></div>
 		</div>
-	</div>
+	</article>
 
-	<div class="katalog-window">
+	<article class="katalog-window">
 		<div class="kwin-pic">
-			<a><img src="img/katalog/rasskazi.jpg"></a>
+			<a target="_self"><img alt="Обложка книги Рассказы о Родине" src="img/katalog/rasskazi.jpg"></a>
 		</div>
 		<div class="kwin-name1">
 			<table><tr><td class="kwin-name2">
-				<a class="kwin-name2-name">Рассказы о Родине</a><br>
-				<a class="kwin-name2-author">Дмитрий Алексеевич Глуховский</a>
+				<a target="_self" class="kwin-name2-name">Рассказы о Родине</a><br>
+				<a target="_self" class="kwin-name2-author" href="https://ru.wikipedia.org/wiki/%D0%93%D0%BB%D1%83%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9,_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87">Дмитрий Алексеевич Глуховский</a>
 			</td></tr></table>
 		</div>
 		<div class="kwin-description">
@@ -317,16 +319,16 @@
 				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
 			</table></div>
 		</div>
-	</div>
+	</article>
 
-	<div class="katalog-window">
+	<article class="katalog-window">
 		<div class="kwin-pic">
-			<a><img src="img/katalog/1993.jpg"></a>
+			<a target="_self"><img alt="Обложка книги 1993" src="img/katalog/1993.jpg"></a>
 		</div>
 		<div class="kwin-name1">
 			<table>
-				<tr><td class="kwin-name2"></td><a class="kwin-name2-name">1993</a></td></tr>
-				<tr><td class="kwin-name2"><a class="kwin-name2-author">Сергей Александрович Шаргунов</a></td></tr>
+				<tr><td class="kwin-name2"></td><a target="_self" class="kwin-name2-name">1993</a></td></tr>
+				<tr><td class="kwin-name2"><a target="_self" class="kwin-name2-author" href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D1%80%D0%B3%D1%83%D0%BD%D0%BE%D0%B2,_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87">Сергей Александрович Шаргунов</a></td></tr>
 			</table>
 		</div>
 		<div class="kwin-description">
@@ -346,40 +348,41 @@
 				<tr><td class="kwin-more"><input type="button" value="ПОДРОБНЕЕ"></td></tr>
 			</table></div>
 		</div>
-	</div>
-</div>
+	</article>
+</section>
 <div class="katalog-scroll-main">
-	<div class="katalog-scroll">
-		<div class="katalog-scroll-in"><a href="index.html">|<</a></div>
-		<div class="katalog-scroll-in"><a href="index.html"><</a></div>
-		<div class="katalog-scroll-in"><a href="index.html"> </a></div>
+	<nav class="katalog-scroll">
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">|<</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html"><</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html"> </a></div>
 		<div class="katalog-scroll-in-chosen">1</div>
-		<div class="katalog-scroll-in"><a href="index.html">2</a></div>
-		<div class="katalog-scroll-in"><a href="index.html">3</a></div>
-		<div class="katalog-scroll-in"><a href="index.html">4</a></div>
-		<div class="katalog-scroll-in"><a href="index.html">5</a></div>
-		<div class="katalog-scroll-in"><a href="index.html">6</a></div>
-		<div class="katalog-scroll-in"><a href="index.html">7</a></div>
-		<div class="katalog-scroll-in"><a href="index.html">...</a></div>
-		<div class="katalog-scroll-in"><a href="index.html">></a></div>
-		<div class="katalog-scroll-in"><a href="index.html">>|</a></div>
-	</div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">2</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">3</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">4</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">5</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">6</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">7</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">...</a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">></a></div>
+		<div class="katalog-scroll-in"><a target="_self" href="index.html">>|</a></div>
+	</nav>
 </div>
 
-<footer><div class="footer">
-	<div class="footer-map"><ul>
-		<li><a>Каталог</a></li>
-		<li><a>FAQ</a></li>
-		<li><a>Авторизация/Регистрация</a></li>
-		<li><a>Кабинет</a></li>
-		<li><a>Публикация</a></li>
-	</ul></div>
+<footer>
+	<nav class="footer-map"><ul>
+		<!-- не смотрите на пустые тэги <a>, это просто заглушки для тестового сайта! -->
+		<li><a target="_self">Каталог</a></li>
+		<li><a target="_self">FAQ</a></li>
+		<li><a target="_self">Авторизация/Регистрация</a></li>
+		<li><a target="_self">Кабинет</a></li>
+		<li><a target="_self">Публикация</a></li>
+	</ul></nav>
 	<div class="footer-copyright"><table><tr><td><p>© Шадрин В.В., 2023</p></td></tr></table></div>
 	<div class="footer-call"><table align="right">
 		<tr><td colspan="2" class="footer-call-head"><p>Свяжитесь с нами:</p></td></tr>
 		<tr><td>Телефон:</td><td>555-5224</td></tr>
-		<tr><td>ВК:</td><td><a href="https://vk.com/shadrinvv7">Главный программист</a></td></tr>
+		<tr><td>ВК:</td><td><a target="_blank" href="https://vk.com/shadrinvv7">Главный программист</a></td></tr>
 	</table></div>
-</div></footer>
+</footer>
 </body>
 </html>
